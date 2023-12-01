@@ -16,4 +16,4 @@ Users should be able to:
 
 ### Layout of sign-up
 
-I created a folder `images`, where you can find a layout
+I created a folder `images`, where you can find a layout.
