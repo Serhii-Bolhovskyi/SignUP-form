@@ -10,7 +10,7 @@ Users should be able to:
 
 1. View the site's optimal layout based on their device's screen size.
 1. All interactive elements on the page have hover states.
-1.When you submit the form, you'll get an error message if:
+1. When you submit the form, you'll get an error message if:
     * There are no input fields available.
     * The email address is incorrectly formatted.
 
