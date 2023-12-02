@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+:root{
+    --bg-color-purple: #8367c7;
+    --bg-color-primary: #ffffff;
+    --bg-color-green: #31c48d;
+    
+}
+
+/* basic styles */
+
+body{
+    background: #f3fae1;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    letter-spacing: .3px;
+}
+
+.container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* cta */
+
+.cta {
+    width: 100%;
+    display: flex;
+    height: 55px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    color: #fff;
+    border: none;
+}
+
+/* 1st button */
+
+.bg-color-purple{
+    background: var(--bg-color-purple);
+}
+
+.text-try{
+    font-size: 1.13rem;
+    font-weight: 500;
+}
+
+/* form */
+
+.forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bg-color-primary {
+    background: var(--bg-color-primary) ;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.4rem 1.8rem;
+    gap: 30px;
+}
+
+input {
+    width: 500px;
+    height: 45px;
+    padding-left: 0.8rem  ;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input::placeholder{
+    color: #1f1f11;
+    opacity: .4;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+input:focus, input:active{
+    border: 2px solid var(--bg-color-purple);
+}
+
+/* 2nd button*/
+
+.bg-color-green{
+    background: var(--bg-color-green);
+}
+
+.cta-2-width{
+    width: 500px;
+    border-radius: 5px;
+}
+
+/* para */
+
+.text-claim {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.lisence{
+    margin: 1rem 2.4rem;
+    text-decoration: none;
+    color: #ef233c;
+    text-align: center;
+}
+
+.lisence span{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #1f1f11;
+    opacity: 0.3;
+    cursor: default;
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        max-width: 400px;
+    }
+
+    input, .cta-2-width{
+        width: 300px;
+    }
+}
