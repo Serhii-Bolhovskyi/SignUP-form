@@ -3,9 +3,9 @@
 :root{
     --bg-color-purple: rgba(159, 90, 253);
     --bg-color-primary: #ffffff;
-    --bg-color-green: rgba(63, 195, 128);;
+    --bg-color-green: rgba(63, 195, 128);
 
-    --box-sh-container: 0 6px rgba(0, 0, 0, 0.1)
+    --box-sh-container: 0 6px rgba(0, 0, 0, 0.1);
     
 }
 
