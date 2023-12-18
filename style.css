@@ -120,6 +120,14 @@ input:focus, input:active{
     border: 2px solid rgba(0, 0, 0, 0.7)
 }
 
+/* input:valid{
+    border: 2px solid green;
+}
+
+input:invalid{
+    border: 2px solid #ef233c;
+} */
+
 /* 2nd button*/
 
 .bg-color-green{
