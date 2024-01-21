@@ -94,8 +94,6 @@ button{
 
 .form {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 2.4rem 1.8rem;
     padding-bottom: 1rem;
@@ -115,10 +113,6 @@ input::placeholder{
     opacity: .4;
     font-size: 1rem;
     font-weight: 400;
-}
-
-input:focus, input:active{
-    border: 2px solid rgba(0, 0, 0, 0.7)
 }
 
 /* 2nd button*/
@@ -165,6 +159,10 @@ input:focus, input:active{
     margin-top: .25rem;
     color: red;
   }
+
+  .error-w {
+    width: 500px;
+  }
   
   .valid {
     border: 2px solid green;
@@ -174,6 +172,10 @@ input:focus, input:active{
     border: 2px solid red;
   }
 
+.focus{
+    border: 2px solid rgba(0, 0, 0, 0.7)
+}
+
 @media screen and (max-width: 640px) {
     .container{
         max-width: 400px;
@@ -182,4 +184,9 @@ input:focus, input:active{
     input, .cta-2-width{
         width: 300px;
     }
+
+    .error-w {
+        width: 300px;
+        
+      }
 }

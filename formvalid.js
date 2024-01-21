@@ -5,24 +5,35 @@ for(const item of inputFields) {
     item.addEventListener('blur', (event) => {
         validateForm(event);
     });
+
+    item.addEventListener('focus', () =>  setFocus(item))
 }
+
+const setFocus = (element) => {
+    const errorSection = element.parentElement.querySelector(".error");
+    errorSection.innerText = "";
+
+    element.classList.remove("invalid", "valid");
+    element.classList.add("focus");
+}
+
 
 const setError = (element, message) => {
     const errorSection = element.parentElement.querySelector(".error");
     errorSection.innerText = message;
+    element.classList.remove("valid", "focus");
     element.classList.add("invalid");
-    element.classList.remove("valid");
 }
 
 const setValid = (element) => {
     const errorSection = element.parentElement.querySelector(".error");
     errorSection.innerText = "";
-    element.classList.remove("invalid");
+    element.classList.remove("invalid", "focus");
     element.classList.add("valid");
 }
 
-const validateFirstName = (firstName) => {
-    if (firstName.value === "") {
+const validateFirstName = (firstName) => { 
+    if (firstName.value.trim() === "") {
         setError(firstName, "First Name is required");
     } else {
         setValid(firstName)
@@ -30,7 +41,7 @@ const validateFirstName = (firstName) => {
 }
 
 const validateLastName = (lastName) => {
-    if (lastName.value === "") {
+    if (lastName.value.trim()  === "") {
         setError(lastName, "Last Name is required");
     } else {
         setValid(lastName)
