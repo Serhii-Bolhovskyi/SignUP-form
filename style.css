@@ -162,6 +162,7 @@ input:focus, input:active{
 
 /* valid/invalid properties */
 .error {
+    margin-top: .25rem;
     color: red;
   }
   
