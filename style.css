@@ -92,12 +92,13 @@ button{
     background: var(--bg-color-primary);
 }
 
-form {
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 2.4rem 1.8rem;
+    padding-bottom: 1rem;
     gap: 30px;
 }
 
@@ -119,14 +120,6 @@ input::placeholder{
 input:focus, input:active{
     border: 2px solid rgba(0, 0, 0, 0.7)
 }
-
-/* input:valid{
-    border: 2px solid green;
-}
-
-input:invalid{
-    border: 2px solid #ef233c;
-} */
 
 /* 2nd button*/
 
@@ -153,7 +146,7 @@ input:invalid{
 }
 
 .lisence{
-    margin: 1rem 2.4rem;
+    margin:.5rem 2.4rem;
     text-decoration: none;
     color: #ef233c;
     text-align: center;
@@ -166,6 +159,19 @@ input:invalid{
     opacity: 0.3;
     cursor: default;
 }
+
+/* valid/invalid properties */
+.error {
+    color: red;
+  }
+  
+  .valid {
+    border: 2px solid green;
+  }
+  
+  .invalid {
+    border: 2px solid red;
+  }
 
 @media screen and (max-width: 640px) {
     .container{

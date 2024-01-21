@@ -18,18 +18,35 @@
     <main>
         <section class="container bg-color-primary box-sh">
             <div class="forms">
-                <form class="">
-                    <input type="text" id="firstName" placeholder="First Name" required>
-                    <input type="text" id="lastName" placeholder="Last Name" required>
-                    <input type="email" id="email" placeholder="Email Address" required>
-                    <input type="password" id="password" placeholder="Password" required>
+                <form class="form">
+                    <div>
+                        <input type="text" id="firstName" placeholder="First Name"
+                        class="form-control" required>
+                        <div class="error"></div>
+                    </div>
+                    <!-- <input type="text" id="firstName" placeholder="First Name" required> -->
+                    <div>
+                        <input type="text" id="lastName" placeholder="Last Name" 
+                        class="form-control" required>
+                        <div class="error"></div>
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="Email Address"
+                        class="form-control" required>
+                        <div class="error"></div>
+                    </div>
+                    <div>
+                        <input type="password" id="password" placeholder="Password"
+                        class="form-control" required>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="cta cta-2-width bg-color-green" >
+                        <button type="submit" class="btn-sumbit"> <span class="text-claim">claim your free trial</span> </button>
+                    </div>
                 </form>
             </div>
 
-            <div class="cta cta-2-width bg-color-green" >
-                <button type="submit" class="btn-sumbit"> <span class="text-claim">claim your free trial</span> </button>
-            </div>
-    
             <a href="#" class="lisence"><span> By clicking the button, you are agreeing to our</span> Terms and Services </a>
         </section>
     </main>
